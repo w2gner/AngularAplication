@@ -1,32 +1,29 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { MatMenuModule } from '@angular/material/menu';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginPageComponent } from './login-page.component';
-import { TableSelectionExample } from './table-selection-example';
-import { MenuOverviewExample } from './menu-overview-example';
-
+import { LoginPageComponent } from './login-page/login-page.component';
+import { HeaderMenuComponent } from './header-menu/header-menu.component';
+import { DataTableComponent } from './data-table/data-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
-    TableSelectionExample,
-    MenuOverviewExample
-
+    HeaderMenuComponent,
+    DataTableComponent
   ],
   imports: [
     BrowserModule,
+    MatMenuModule,
+    MatTableModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot([
-      { path: 'login', component: LoginPageComponent },
-      { path: 'home', component: TableSelectionExample },
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: '**', redirectTo: 'home', pathMatch: 'full' },
-    ])
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

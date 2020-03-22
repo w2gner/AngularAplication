@@ -26,11 +26,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
  * @title Table with selection
  */
 @Component({
-  selector: 'table-selection-example',
-  styleUrls: ['table-selection-example.css'],
-  templateUrl: 'table-selection-example.html',
+  selector: 'data-table.component',
+  styleUrls: ['data-table.component.scss'],
+  templateUrl: 'data-table.component.html',
 })
-export class TableSelectionExample {
+export class DataTableComponent {
   displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);

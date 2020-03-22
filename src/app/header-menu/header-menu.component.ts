@@ -4,12 +4,18 @@ import { Component } from '@angular/core';
  * @title Basic menu
  */
 @Component({
-  selector: 'menu-overview-example',
-  templateUrl: 'menu-overview-example.html',
-  styleUrls: ['menu-overview-example.css'],
+  selector: 'header-menu.component',
+  templateUrl: 'header-menu.component.html',
+  styleUrls: ['header-menu.component.scss'],
 })
-export class MenuOverviewExample { }
+export class HeaderMenuComponent {
+  clicked = false;
 
+  handleClick() {
+    this.clicked = true;
+    console.log(this);
+  }
+}
 
 /**  Copyright 2019 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that

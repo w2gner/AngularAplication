@@ -9,6 +9,8 @@ import { HeaderMenuComponent } from './header-menu/header-menu.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatTableModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

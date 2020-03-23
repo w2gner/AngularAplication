@@ -62,3 +62,10 @@ body {
 .box input[type="submit"]:hover {
     background: #2ecc71;
 }
+
+.loader {
+  position: absolute;
+  top: 35%;
+  left: 36%;
+  visibility: hidden;
+}

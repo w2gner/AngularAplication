@@ -1,8 +1,7 @@
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/W4gnerG/Angular) 
 
-# RoutingTest
+# Angular Aplication
 
-If you want to view this project you can use: https://gitpod.io/github.com/W4gnerG/Angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

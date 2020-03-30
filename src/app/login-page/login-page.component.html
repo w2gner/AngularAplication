@@ -3,24 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="login-page.component.scss">
     <link rel="shortcut icon" href="icons/logo.png" />
+    <!--script src="/node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"></script-->
     <title>Login</title>
 </head>
 
 <body>
     <script src="login-page.component.ts"></script>
-    <form class="box" action="index.html" method="post">
+
+    <form class="box">
         <h1>Login</h1>
         <input type="text" id="username" placeholder="Usuário">
         <input type="password" id="password" placeholder="Senha">
-        <input type="submit" id="submit" placeholder="Login" onclick="login()">
-        <mat-spinner color = "accent" class="loader"></mat-spinner>
+        <button type="button" id="submit" placeholder="Login" (click)="goTo()">Login</button>
+        <mat-spinner type="spinner" color="accent" class="loader"></mat-spinner>
     </form>
 
+    <div>
+        <!--lottie-player src="https://assets7.lottiefiles.com/datafiles/40aX5db74VvGPWw/data.json"
+            background="transparent" speed="1" style="width: 300px; height: 300px;" loop controls autoplay>
+        </lottie-player-->
+    </div>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 /**
  * @title Basic menu
@@ -11,9 +12,14 @@ import { Component } from '@angular/core';
 export class HeaderMenuComponent {
   clicked = false;
 
+  constructor(private router: Router) {
+
+  }
+
   handleClick() {
     this.clicked = true;
     console.log(this);
+    this.router.navigate(['/login'])
   }
 }
 

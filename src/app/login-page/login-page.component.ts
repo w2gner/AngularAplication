@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
@@ -8,9 +8,14 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 })
 export class LoginPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+
+  }
+
+  goTo() {
+    this.router.navigate(['/dashboard'])
   }
 
 }
